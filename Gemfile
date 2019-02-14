@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.6'
-gem 'sqlite3'
+gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -36,7 +36,6 @@ group :development do
   gem 'better_errors', '~> 2.4'
   gem 'guard', '~> 2.14', '>= 2.14.1'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
-
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
